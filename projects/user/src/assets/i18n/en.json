@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "login": {
+      "login": "Login",
+      "email": "Email",
+      "creatanaccount": "Create an account"
+    },
+    "register": {
+      "register": "Register",
+      "username": "Username",
+      "email": "Email",
+      "wrongpattern": "wrong pattern",
+      "minimumcharacters": "minimum characters are 5",
+      "confirmpassword": "Confirm Password",
+      "wrongpassword": "wrong Password",
+      "createaccount": "Create Account",
+      "haveanaccount": "Have an Account?"
+    },
+    "password": "Password",
+    "required": "required",
+    "success": "Login Success"
+  },
+  "tasks": {
+    "layout": {
+      "tasks": "Tasks",
+      "alltasks": "All-Tasks",
+      "logout": "Logout"
+    },
+    "listtasks": {
+      "deadline": "DeadLine Date:",
+      "details": "Details",
+      "complete": "Complete"
+    }
+  },
+  "loading": "Loading..."
+}

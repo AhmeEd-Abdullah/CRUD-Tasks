@@ -1,0 +1,19 @@
+<div class="mt-4">
+  <div class="row">
+    <div style="width: 28%;" *ngFor="let item of dataSource;let index = index">
+      <div class="card mt-3">
+        <div class="card-body">
+          <img class="rounded" [src]="'https://crud-qajh.onrender.com/'+item.image" alt="Loading">
+          <h2 class="card-title mt-1">{{item.title}}</h2>
+          <p class="card-subtitle mb-2 text-muted">{{'tasks.listtasks.deadline' | translate}} {{item.deadline}}</p>
+          <p class="card-text">{{item.description }}</p>
+          <a class="card-link mr-2" mat-raised-button color="basic"
+            [routerLink]="[item._id]">{{'tasks.listtasks.details' |
+            translate}} </a>
+          <button mat-raised-button color="warn" (click)="completeTask(item)">{{'tasks.listtasks.complete' | translate}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

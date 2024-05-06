@@ -1,0 +1,39 @@
+<div class="login d-flex justify-content-center align-items-center m-auto">
+
+  <div class="row">
+    <div class="col-md-6 p-0">
+      <div class="overlay"></div>
+      <img src="../../../../assets/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 d-flex align-items-center justify-content-center w-100">
+        <div class="box w-75">
+          <h2>{{"auth.login.login" | translate}}</h2>
+
+          <form #loginForm="ngForm">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>{{'auth.login.email' | translate}}</mat-label>
+              <input matInput placeholder="{{'auth.login.email' | translate}}" name="email" type="email"
+                [(ngModel)]="email" required>
+              <mat-error>{{'auth.required' | translate}}</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>{{'auth.password' | translate}}</mat-label>
+              <input matInput placeholder="{{'auth.password' | translate}}" name="password" type="password"
+                [(ngModel)]="password" required minlength="5">
+              <mat-error>{{'auth.required' | translate}}</mat-error>
+            </mat-form-field>
+          </form>
+          <div class="d-flex justify-content-center">
+            <button [disabled]="loginForm.invalid" mat-raised-button color="warn" (click)="login()">{{'auth.login.login'
+              | translate}}</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <a routerLink="/register">{{'auth.login.creatanaccount' | translate}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

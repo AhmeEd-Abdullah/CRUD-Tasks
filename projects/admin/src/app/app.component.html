@@ -1,0 +1,11 @@
+<ng-container *ngIf="!isSmallScreen">
+  <router-outlet></router-outlet>
+
+  <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#ee0659" type="square-jelly-box" [fullScreen]="true">
+    <p style="color: white">{{'loading' | translate}}</p>
+  </ngx-spinner>
+</ng-container>
+
+<ng-container *ngIf="isSmallScreen">
+  <app-small-screen-message></app-small-screen-message>
+</ng-container>

@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div class="imageBox">
+    <img [src]="'https://crud-qajh.onrender.com/'+taskData?.image" alt="Loading" class="w-100">
+  </div>
+  <div class="d-flex justify-content-between align-items-baseline my-3">
+    <h1 class="card-title ">{{taskData?.title}}</h1>
+    <button mat-raised-button color="warn" (click)="completeTask()">{{'tasks.listtasks.complete' | translate}}</button>
+  </div>
+  <p class="card-subtitle mb-2 text-muted">{{'tasks.listtasks.deadline' | translate}} {{taskData?.deadline}}</p>
+  <hr>
+  <p class="card-text">{{taskData?.description}}</p>
+</div>

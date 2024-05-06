@@ -1,0 +1,64 @@
+{
+  "auth": {
+    "login": "تسجيل الدخول",
+    "email": "البريد الألكتروني",
+    "password": "كلمه المرور",
+    "success": "تم تسجيل الدخول بنجاح"
+  },
+  "dashboard": {
+    "layout": {
+      "tasks": "المهمات",
+      "alltasks": "جميع المهام",
+      "users": "المستخدمين",
+      "logout": "تسجيل الخروج"
+    },
+    "manageusers": {
+      "search": "بحث",
+      "searchbyname": "بحث بواسطه الأسم",
+      "number": "الرقم",
+      "name": "الأسم",
+      "email": "البريد الألكتروني",
+      "tasksassigned": "المهام المسنـده",
+      "delete": "حذف",
+      "inactive": "تعطيل",
+      "active": "تفعيل"
+    },
+    "tasksadmin": {
+      "addtask": {
+        "addnewtask": "أضافه مهمه جديده",
+        "close": "إغلاق",
+        "title": "العنوان",
+        "user": "المستخدم",
+        "selectimage": "اختيار صوره",
+        "deadline": "الموعد النهائي",
+        "description": "الوصف",
+        "create": "إنشاء",
+        "update": "تعديل"
+      },
+      "popup": {
+        "confirmationmessage": "هل أنت متأكد من هذا الاجراء؟",
+        "yes": "نعم",
+        "no": "لا"
+      },
+      "listtasks": {
+        "addtask": "إضافه مهمه",
+        "search": "بحث",
+        "searchbytitle": "البحث بواسطه العنوان",
+        "searchbyuser": "البحث بواسطه المستخدم",
+        "status": "الحاله",
+        "Complete": "مكتمل",
+        "In-Progress": "غير مكتمل",
+        "daterange": "ادخل نطاق التاريخ",
+        "startdate": "تاريخ البدء",
+        "enddate": "تاريخ الانتهاء ",
+        "image": "الصوره",
+        "title": "العنوان",
+        "user": "المستخدم",
+        "deadline": "الموعد النهائي",
+        "update": "تعديل",
+        "delete": "حذف"
+      }
+    }
+  },
+  "loading": "أنتظار..."
+}

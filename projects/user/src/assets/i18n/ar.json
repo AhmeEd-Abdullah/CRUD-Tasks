@@ -1,0 +1,34 @@
+{
+  "auth": {
+    "login": {
+      "login": "تسجيل الدخول",
+      "email": "البريد الألكتروني",
+      "creatanaccount": "ْإنشاء حساب"
+    },
+    "register": {
+      "register": "تسجيل",
+      "username": "أسم المستخدم",
+      "wrongpattern": "نمط خاطئ",
+      "minimumcharacters": "٥ حروف علي الأقل",
+      "confirmpassword": "تأكيد كلمه المرور",
+      "wrongpassword": "كلمه مرور خاطئه",
+      "haveanaccount": "هل لديك حساب؟"
+    },
+    "required": "مطلوب",
+    "password": "كلمه المرور",
+    "success": "تم تسجيل الدخول بنجاح"
+  },
+  "tasks": {
+    "layout": {
+      "tasks": "المهمات",
+      "alltasks": "جميع المهام",
+      "logout": "تسجيل الخروج"
+    },
+    "listtasks": {
+      "deadline": "الموعد النهائي:",
+      "details": "التفاصيل",
+      "complete": "إكتمال المهمه"
+    }
+  },
+  "loading": "أنتظار..."
+}

@@ -1,0 +1,64 @@
+<div class="p-4">
+  <header class="d-flex justify-content-between align-items-center">
+    <h1 class="m-0">{{"dashboard.tasksadmin.addtask.addnewtask" | translate}}</h1>
+    <button mat-flat-button (click)="cofirmClosing()" class="text-danger">
+      <mat-icon>close</mat-icon>
+    </button>
+  </header>
+  <form [formGroup]="newTaskForm">
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>{{"dashboard.tasksadmin.addtask.title" | translate}}</mat-label>
+          <input matInput formControlName="title" placeholder='Minimum characters are 5'>
+        </mat-form-field>
+      </div>
+      <div class="col-md-12">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>{{"dashboard.tasksadmin.addtask.user" | translate}}</mat-label>
+          <mat-select formControlName="userId">
+            <mat-option *ngFor="let user of users" [value]="user?.id">
+              {{user?.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-12 my-2">
+        <label for="selectImage" class="btn btn-primary mr-2">{{"dashboard.tasksadmin.addtask.selectimage" |
+          translate}}</label>
+        <span>{{imageName}}</span>
+        <input type="file" id="selectImage" hidden (change)="setImage($event)">
+      </div>
+      <div class="col-md-12">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>{{"dashboard.tasksadmin.addtask.deadline" | translate}}</mat-label>
+          <input matInput formControlName="deadline" [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-12">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>{{"dashboard.tasksadmin.addtask.description" | translate}}</mat-label>
+          <textarea matInput formControlName="description"
+            placeholder='{{"dashboard.tasksadmin.addtask.description" | translate}}'></textarea>
+        </mat-form-field>
+
+      </div>
+    </div>
+  </form>
+
+  <footer class="tw-p-6">
+    <div class="d-flex justify-content-center align-items-center">
+      <button *ngIf="!data" mat-flat-button class="btn btn-success py-1 px-5 mx-2" (click)="createTask()"
+        [disabled]="newTaskForm.invalid">{{"dashboard.tasksadmin.addtask.create" | translate}}</button>
+      <button *ngIf="data" mat-flat-button class="btn btn-success py-1 px-5 mx-2" (click)="updateTask()"
+        [disabled]="newTaskForm.invalid">{{"dashboard.tasksadmin.addtask.update" | translate}}</button>
+
+      <button mat-flat-button class="btn btn-danger py-1 px-5"
+        (click)="cofirmClosing()">{{"dashboard.tasksadmin.addtask.close" | translate}}</button>
+    </div>
+
+  </footer>
+</div>

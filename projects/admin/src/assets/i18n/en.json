@@ -1,0 +1,64 @@
+{
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "success": "Login Success"
+  },
+  "dashboard": {
+    "layout": {
+      "tasks": "Tasks",
+      "alltasks": "All-Tasks",
+      "users": "Users",
+      "logout": "Logout"
+    },
+    "manageusers": {
+      "search": "Search",
+      "searchbyname": "Search By Name",
+      "number": "No.",
+      "name": "Name",
+      "email": "Email",
+      "tasksassigned": "Tasks Assigned",
+      "delete": "Delete",
+      "inactive": "In-Active",
+      "active": "Active"
+    },
+    "tasksadmin": {
+      "addtask": {
+        "addnewtask": "Add New Task",
+        "close": "close",
+        "title": "Title",
+        "user": "User",
+        "selectimage": "selectImage",
+        "deadline": "Deadline Date",
+        "description": "Description",
+        "create": "Create",
+        "update": "Update"
+      },
+      "popup": {
+        "confirmationmessage": "Are you sure about this action?",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "listtasks": {
+        "addtask": "Add Task",
+        "search": "Search",
+        "searchbytitle": "Search By Title",
+        "searchbyuser": "Search By User",
+        "status": "Status",
+        "Complete": "Complete",
+        "In-Progress": "In-Progress",
+        "daterange": "Enter a date range",
+        "startdate": "Start date",
+        "enddate": "End date",
+        "image": "Image",
+        "title": "Title",
+        "user": "User",
+        "deadline": "Deadline Date",
+        "update": "Update",
+        "delete": "Delete"
+      }
+    }
+  },
+  "loading": "Loading..."
+}
